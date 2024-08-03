@@ -7,6 +7,8 @@
     --secondary-bg-color: #E7EAF1;
 }
 
+/* General Setup */
+
 body{
     background-color: var(--main-accent-color);
     margin: 0 auto;
@@ -14,15 +16,26 @@ body{
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+.has-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 /* Header */
 
 header{
     width: 100%;
     height: 750px;
-    background-image: url(img/header-img.jpg);
+    background-image: url(img/header-img-1.jpg);
     background-color: var(--main-bg-color);
+    animation: change-img 22.5s infinite;
+}
+@keyframes change-img {
+   0% {background-image: url(img/header-img-1.jpg);}
+   33% {background-image: url(img/header-img-2.jpg);} 
+   66% {background-image: url(img/header-img-3.jpg);}
+   100% {background-image: url(img/header-img-1.jpg);}
 }
 .top-bar{
     width: 100%;
@@ -63,7 +76,7 @@ header{
 }
 .card{
     width: 25vw;
-    max-width: 400px;
+    max-width: 300px;
     height: 370px;
     background-color: var(--pure-white-color);
     border-radius: 15px;
@@ -139,9 +152,10 @@ header{
 }
 .text-box-content{
     display: flex;
+    min-height: 250px;
+    max-width: 600px;
     justify-content: center;
-    align-items: center
-    ;
+    align-items: center;
     background-color: var(--main-bg-color);
     border-radius: 15px;
     margin: 35px 150px;
