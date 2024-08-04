@@ -1,5 +1,6 @@
 :root{
     --pure-white-color: #fff;
+    --pure-black-color: #000000;
 
     --main-accent-color: #2649A5;
 
@@ -51,7 +52,8 @@ header{
     height: 120px;
     border-radius: 0 0 35px 35px;
 
-    background-image: url(img/logo.png);
+    background-image: url(img/parana-logo.png);
+    background-size: 65%;
 }
 
 /* Section Setup */
@@ -73,6 +75,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 50px;
 }
 .card{
     width: 25vw;
@@ -85,9 +88,15 @@ header{
 
     display: flex;
     justify-content: center;
+
+    font-size: 15pt;
+    box-shadow: var(--pure-black-colors) 0px 7px 29px 0px;
+
+    transition: 0.5s;
 }
-.card > p{
-    margin-top: 45px;
+.lift:hover{
+    box-shadow: var(--pure-black-color) 0px 20px 30px -10px;
+    translate: 0px -5px;
 }
 .info-icon{
     position: absolute;
@@ -100,29 +109,61 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    color: white;
 }
+
 
 /* Graph */
 
 .graph-wrapper{
     background-color: var(--main-bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 3fr 0.8fr 0.5fr;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.graph-wrapper h1{
+    place-self: center;
+    font-size: 25pt;
+}
+.graph-wrapper > .text-box{
+    width: 50vw;
+    height: auto;
+    text-align: center;
+
+    background-color: var(--pure-white-color);
+    border-radius: 15px;
+    padding: 15px;
 }
 .info-graph-bar{
-    width: 60vw;
+    margin-top: 50px;
+
+    width: 50vw;
     height: 20px;
     border-radius: 25px;
 
     background-color: var(--pure-white-color);
+    place-self: center;
 }
 .info-graph-progress{
-    width: 30vw;
     height: 20px;
     border-radius: 25px 0 0 25px;
 
     background-color: var(--main-accent-color);
+    box-shadow: var(--main-accent-color) 0px 2px 4px 0px,
+                var(--main-accent-color) 0px 4px 16px 0px;
+
+    animation: progress-bar-fill 2s infinite ease-out alternate;
+}
+@keyframes progress-bar-fill {
+    0% {width: 0vw;}
+    25% {width: 0vw;}
+    75% {width: 50vw;}
+    100% {
+        width: 50vw;
+        border-radius: 15px;
+    }
 }
 .info-graph-icon{
     position: absolute;
@@ -130,13 +171,17 @@ header{
     height: 75px;
     background-color: var(--main-accent-color);
     border-radius: 50px;
-    translate: -50% -35%;
+    translate: -10% -35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 /* Text-box */
 
 .text-box{
-    height: 1000px;
+    height: 700px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -194,6 +239,21 @@ footer p{
         width: 80vw;
     }
     
+    /* Graph */
+    .info-graph-icon{
+        width: 50px;
+        height: 50px;
+        translate: -10% -25%;
+    }
+    .graph-wrapper{
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .graph-wrapper > .text-box{
+       width: 80vw;
+    }
+
     /* Text Box */
     .title-box{
         width: 85vw;
