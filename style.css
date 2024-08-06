@@ -11,11 +11,25 @@
 /* General Setup */
 
 body{
-    background-color: var(--main-accent-color);
+    scroll-behavior: smooth;
+    background-color: var(--main-bg-color);
     margin: 0 auto;
     padding: 0 auto;
-
+    height: 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    color: white;
+    padding-inline-start: 15px;
+}
+hr{
+    width: 40%;
+    border: 2px solid white;
+}
+i:hover{
+    transform: scale(115%);
+    transition: 0.5s;
+    padding-inline: 50px;
 }
 .has-img{
     background-size: cover;
@@ -23,20 +37,35 @@ body{
     background-position: center;
 }
 
-/* Usable classes */
-
+/* Reusable classes */
+.rotate:hover{
+    animation: rotation 2s alternate ease-in-out;
+}
+@keyframes rotation{
+    5% {
+        border-radius: 50px;
+    }
+    92.5% {
+        border-radius: 50px;
+    }
+    100% {
+        border-radius: 0 0 35px 35px;
+        transform: rotate(360deg);
+        border-radius: 0 0 35px 35px;
+    }
+ }
 .lift{
-    box-shadow: var(--pure-black-color) 0px 5px 10px;
+    box-shadow: gray 0px 7px 29px 0px;
 }
 .lift:hover{
-    box-shadow: var(--pure-black-color) 0px 20px 30px -10px;
+    box-shadow: gray 0px 20px 30px -10px;
     translate: 0px -5px;
 }
 .inset{
-    box-shadow: var(--pure-black-color) inset 1px 1px 2.5px;
+    box-shadow: darkgrey inset 1px 1px 2.5px;
 }
 .inset:hover{
-    box-shadow: var(--pure-black-color) inset 2px 2px 5px;
+    box-shadow: darkgrey inset 2px 2px 5px;
 }
 
 /* Header */
@@ -92,6 +121,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     padding-top: 50px;
+    border-radius: 0px 0px 20px 0px;
 }
 .card{
     width: 25vw;
@@ -215,32 +245,40 @@ header{
 }
 .text-box-content{
     display: flex;
-    min-height: 250px;
     max-width: 600px;
     justify-content: center;
     align-items: center;
     background-color: var(--main-bg-color);
     border-radius: 15px;
     margin-top: 50px;
-    padding: 20px;
+    padding: 30px;
 }
 .text-box-content > p{
     text-align: center;
-    margin-right: 35px;
+    margin: 10px;
 }
 .text-box-content > img{
     border-radius: 15px;
+    margin-left: 20px;
 }
 
 /* Footer */
 
 footer{
     background-color: var(--main-accent-color);
-
 }
-
 footer p{
     color: #fff;
+    background-color: var(--main-accent-color);
+
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 4pc;
+
+    padding: 5vw;
+}
+footer p i{
+    font-size: 50px;
 }
 
 .wave{
@@ -281,14 +319,34 @@ footer p{
     }
 
     /* Text Box */
+    .text-box{
+        height: fit-content;
+    }
     .title-box{
-        width: 85vw;
+        width: 65vw;
+        translate: 0 20px;
+        border-radius: 25px 25px 0px 0px;
+        padding-inline: 10px;
+        text-align: center;
+    }
+    .title-box h1{
+        padding: 50%;
     }
     .text-box-content{
         flex-direction: column;
         margin: 20px;
+        margin-top: 0;
+        padding-inline: 0;
     }
     .text-box-content > p{
         padding-right: 0;
+        padding-inline: 15px;
+        margin: 0;
+    }
+    .text-box-content > img{
+        margin-top: 35px;
+        margin-left: 0;
+        margin-bottom: 0px;
+        width: 75%;
     }
 }
