@@ -21,6 +21,24 @@ São esses desenvolvimentos que fazem o Paraná avançar cada vez mais em um cic
 <br> 
 <br>
 
+<h2 align="center">- 0 - Figma Design - Figma -</h2>
+
+<div align="center">
+
+  ![image](https://github.com/user-attachments/assets/ffe255a7-3875-4371-9866-8adc87b68396)
+
+</div>
+
+<br>
+<br> 
+<br>
+
+<h3>Brainstorming e planejamento</h3>
+
+<p>Um dos momentos mais importantes duranto o desenvolvimento é o de planejamento e organização de ideias, é aqui que se pensa sobre como tudo vai ficar no final e como podemos usar as tecnologias que temos para fazer o projeto acontece.
+No projeto figma temos uma caricatura de como o projeto vai ficar, e é com ela que sabemos o que fazer na hora de "codar"(programar).</p>
+
+
 <h2 align="center">- 1 - O Desenvolvimento do Projeto - CSS -</h2>
 
 <h3>Responsividade e Estilo</h3>
