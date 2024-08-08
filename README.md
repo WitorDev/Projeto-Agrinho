@@ -4,8 +4,8 @@
 
   ![image](https://github.com/user-attachments/assets/62f7526b-0068-4340-bec5-69ad8d9eb5c3)
 
-  
 </div>
+
 
 <p>
 Nesse projeto mostramos como a tecnologia que tem seu desenvolvimento nas cidades do Paraná vem a ter seu uso no campo.
@@ -30,9 +30,11 @@ São esses desenvolvimentos que fazem o Paraná avançar cada vez mais em um cic
 <p>Um desses exemplos são as animações usadas no projeto</p>
 
 <div align="center">
+<kbd>
   
   ![percentage](https://github.com/user-attachments/assets/88b6f918-47a7-4859-80d9-c9a533c61e6c)
 
+  </kbd>
 </div>
 
 <p>São elas que permitem que o site fique mais dinâmico e intuitivo para o usuário.</p>
@@ -43,9 +45,11 @@ São esses desenvolvimentos que fazem o Paraná avançar cada vez mais em um cic
 </p>
 
 <div align="center">
+<kbd>
 
 ![cards](https://github.com/user-attachments/assets/e1101717-0732-404d-9579-b8f2a71614cc)
 
+  </kbd>
 </div>
 
 <p>
@@ -64,7 +68,11 @@ Com isso temos uma linha de informação sobre a tecnologia no Paraná dentro de
 <p>É com o uso de tags como: Header, Section, Footer, entre outros... Que criamos uma estruturação concisa.</p>
 
 <div align="center">
+<kbd>
 
 ![html-code](https://github.com/user-attachments/assets/94b402cf-9880-429c-a703-87f04b3dee4a)
 
+  </kbd>
 </div>
+
+<p>Assim foi feito o projeto, trazendo como foco o estado do Paraná e suas tecnologias, com ênfase no campo e sua colaboração com a cidade em meio a inovação e o desenvolvimento no estado.</p>
