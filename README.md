@@ -35,7 +35,7 @@ São esses desenvolvimentos que fazem o Paraná avançar cada vez mais em um cic
 
 <h3>Brainstorming e planejamento</h3>
 
-<p>Um dos momentos mais importantes duranto o desenvolvimento é o de planejamento e organização de ideias, é aqui que se pensa sobre como tudo vai ficar no final e como podemos usar as tecnologias que temos para fazer o projeto acontece.
+<p>Um dos momentos mais importantes duranto o desenvolvimento é o de planejamento e organização de ideias, é aqui que se pensa sobre como tudo vai ficar no final e como podemos usar as tecnologias que temos para fazer o projeto acontecer.
 No projeto figma temos uma caricatura de como o projeto vai ficar, e é com ela que sabemos o que fazer na hora de "codar"(programar).</p>
 
 
