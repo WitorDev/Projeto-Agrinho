@@ -291,7 +291,7 @@ footer p i{
     .card-wrapper{
         height: fit-content;
         flex-direction: column;
-        border-radius: 0px;
+        border-radius: 0% / 0%;
     }
     .card{
         width: 80vw;
