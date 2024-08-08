@@ -21,15 +21,11 @@ body{
 a{
     color: white;
     padding-inline-start: 15px;
+    text-decoration: none;
 }
 hr{
     width: 40%;
     border: 2px solid white;
-}
-i:hover{
-    transform: scale(115%);
-    transition: 0.5s;
-    padding-inline: 50px;
 }
 .has-img{
     background-size: cover;
