@@ -346,4 +346,7 @@ footer p i{
         margin-bottom: 0px;
         width: 75%;
     }
+    .footer-info{
+        font-size: 2.5vw;
+    }
 }
