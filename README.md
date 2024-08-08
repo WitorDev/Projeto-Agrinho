@@ -1,9 +1,5 @@
 <h1 align="center">As Tecnologias do Paraná, do Campo a Cidade</h1>
 
-<br>
-<br> 
-<br>
-
 <h2 align="center">- Overview -</h2>
 <div align="center">
 
